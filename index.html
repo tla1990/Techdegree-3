@@ -17,7 +17,8 @@
 
     <div class="intro">
   		<h3>Signup To Join Your Fellow Creatives</h3>
-  		<p>Come and experience life through poetry, <br> live and learn lessons through the eyes of other poets.</p>
+  		<p>Come and experience life through poetry,<br> 
+      live and learn lessons through the eyes of other poets.</p>
     </div>
 		
     <div class="primary">
@@ -42,7 +43,6 @@
           <input type="text" id="city" name="user-city"><br>
             
           <label for="state">State</label><br>
-          
            <select id="state" name="user-state" placeholder="Choose Your State"> 
             <option value="" selected="selected">Select a State</option>
             <option value="AL">Alabama</option>
@@ -105,20 +105,26 @@
 
       <div class="secondary">
         <legend>Writing Preferences</legend>
+
+      <fieldset>
         <p>Most Written Style/Type Used</p>
 
-     		 <input type="checkbox" id="zipcode" name="user-freeverse" checked>
+     		 <input type="checkbox" id="freeverse" name="user-freeverse" checked>
          <label>Free Verse</label><br>
-     		 <input type="checkbox" id="zipcode" name="user-western"><label>Structured: Western (Sonnet)</label><br>
-     		 <input type="checkbox" id="zipcode" name="user-eastern"><label>Structured: Eastern (Haiku)</label>
-          
-        <p>Method of Writing</p>
-       <input type="radio" id="radio" name="user-format" checked>Paper<br>
-   		 <input type="radio" id="radio" name="user-format"><label>Electronic</label>
-   		 <br>
+     		 <input type="checkbox" id="western" name="user-western"><label>Structured: Western (Sonnet)</label><br>
+     		 <input type="checkbox" id="eastern" name="user-eastern"><label>Structured: Eastern (Haiku)</label>
+      </fieldset>
 
-       <input type="radio" id="radio" name="user-format"><label>Both</label><br>
-          
+      <fieldset> 
+        <p>Method of Writing</p>
+       <input type="radio" id="radio" name="user-format" checked>
+       <label>Paper</label><br>
+   		 <input type="radio" id="radio" name="user-format">
+       <label>Electronic</label><br>
+       <input type="radio" id="radio" name="user-format">
+       <label>Both</label><br>
+      </fieldset>
+
         <label for="topics">How has poetry impacted your life?</label><br>      
         <textarea></textarea><br>
           
@@ -127,7 +133,7 @@
     </div>  
 
     <footer>
-        <span>Copyright Poets United</span>
+        <p>Copyright Poets United</p>
     </footer>
 	</body>
 

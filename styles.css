@@ -34,7 +34,7 @@ header {
 
 .site-name,
 .intro,
-span {
+footer p {
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -60,7 +60,7 @@ label p,
 	padding-right: 10px;
 }
 
-/* input[id="name"],
+input[id="name"],
 input[id="mail"],
 input[id="tel"],
 input[id="address"],
@@ -68,35 +68,41 @@ input[id="city"],
 input[id="zipcode"],
 select,
 textarea {
-	background-color: lightgray;
 	border-radius: 5px;
 	box-shadow: 0 0 4px 0 inset;
 	height: 40px;
 	margin-bottom: 10px;
 	width: 100%;
-} */
+} 
 
 input,
 select,
 textarea {
 	background-color: lightgray;
-	border-radius: 5px;
-	box-shadow: 0 0 4px 0 inset;
-	height: 40px;
-	margin-bottom: 10px;
-	width: 100%;
+}
+
+input,
+select,
+textarea:focus {
+	border: 2px solid #beaded;
+	outline: none;
+}
+
+select {
+	border: 3px solid #beaded;
 }
 
 input[id="zipcode"] {
 	width: 50%;
 }
 
-input[checkbox] {
-	vertical-align: middle;
-}
-
 textarea {
 	height: 90px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 0 0 15px 0;
 }
 
 .primary,
@@ -106,10 +112,20 @@ textarea {
 	padding: 20px;
 }
 
+.secondary p,
+.secondary label {
+	padding: 0 0  10px 0;
+}
+
 .primary,
 .secondary,
-span {
+footer p {
 	margin-left: 20px;
+}
+
+fieldset {
+	border: none;
+	margin-bottom: 5px;
 }
 
 textarea {
@@ -125,8 +141,50 @@ button {
 	width: 100%;
 }
 
-span {
+footer p  {
 	text-align: center;
 }
 
+
+/****************************
+		MEDIA QUERIES	
+****************************/
+
+@media (min-width: 768px) {
+
+.intro {
+	width: 50%;
+	}
+
+.primary label,
+select {
+	float: left;
+}
+
+
+.secondary {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.primary,
+.secondary { 
+	width: 60%;
+	margin: 0 auto;
+	}
+
+input [id="zipcode"] {
+	width: 30%;
+	}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 0 10px 15px 0;
+	}
+
+footer {
+	height: 200px;
+	}
+}
 
