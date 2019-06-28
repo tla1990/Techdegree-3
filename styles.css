@@ -28,6 +28,10 @@ header {
 	text-align: center;
 }
 
+.intro h3{
+	padding-bottom: 10px;
+}
+
 .site-name,
 .intro,
 span {
@@ -56,38 +60,39 @@ label p,
 	padding-right: 10px;
 }
 
-input[id="name"],
+/* input[id="name"],
 input[id="mail"],
 input[id="tel"],
 input[id="address"],
 input[id="city"],
+input[id="zipcode"],
 select,
 textarea {
+	background-color: lightgray;
 	border-radius: 5px;
 	box-shadow: 0 0 4px 0 inset;
 	height: 40px;
+	margin-bottom: 10px;
+	width: 100%;
+} */
+
+input,
+select,
+textarea {
+	background-color: lightgray;
+	border-radius: 5px;
+	box-shadow: 0 0 4px 0 inset;
+	height: 40px;
+	margin-bottom: 10px;
 	width: 100%;
 }
 
-input[id="name"],
-input[id="mail"],
-input[id="tel"],
-input[id="address"],
-input[id="city"],
-select { 
-	margin-bottom: 10px;
-}
-
 input[id="zipcode"] {
-	border-radius: 5px;
-	box-shadow: 0 0 4px 0 inset;
-	height: 40px;
+	width: 50%;
 }
 
-
-input[id="checkbox"],
-input[id="radio"] {
-	margin: 0 10px 10px 0;
+input[checkbox] {
+	vertical-align: middle;
 }
 
 textarea {
@@ -107,22 +112,21 @@ span {
 	margin-left: 20px;
 }
 
-.secondary p,
 textarea {
-	margin: 10px 0;
+	margin: 20px 0;
 }
-
-.secondary label] {
-
-}
-
 
 button {
 	background: #beaded;
 	border-radius: 5px;
 	color: #fff;
-	height: 40px;
-	width: 60%;
+	font-size: 1em;
+	height: 50px;
+	width: 100%;
+}
+
+span {
+	text-align: center;
 }
 
 
