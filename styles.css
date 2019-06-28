@@ -94,6 +94,7 @@ select {
 
 input[id="zipcode"] {
 	width: 50%;
+	display: block;
 }
 
 textarea {
@@ -102,7 +103,7 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-	margin: 0 0 15px 0;
+	margin: 0 10px 15px 0;
 }
 
 .primary,
@@ -153,29 +154,14 @@ footer p  {
 @media (min-width: 768px) {
 
 .intro {
+	margin: 40px auto;
 	width: 50%;
 	}
 
-.primary label,
-select {
-	float: left;
-}
-
-
-.secondary {
-	clear: both;
-	content: "";
-	display: table;
-}
-
 .primary,
 .secondary { 
-	width: 60%;
 	margin: 0 auto;
-	}
-
-input [id="zipcode"] {
-	width: 30%;
+	width: 70%;
 	}
 
 input[type="checkbox"],
@@ -183,8 +169,43 @@ input[type="radio"] {
 	margin: 0 10px 15px 0;
 	}
 
+input[id="name"],
+input[id="mail"],
+input[id="tel"],
+input[id="address"],
+input[id="city"],
+select {
+	float: right;
+	width: 70%;
+}
+
+input[id="zipcode"] {
+	float: left;
+	margin-right: 50px;
+	width: 30%;
+	}
+
+.primary legend {
+	margin-bottom: 20px;
+}
+
+.primary label {
+	float: left;
+	margin: 10px;
+	vertical-align: middle;
+
+}
+
+.primary label,
+.secondary {
+	clear: both;
+	content: "";
+	display: table;
+}
+
 footer {
 	height: 200px;
 	}
+
 }
 
