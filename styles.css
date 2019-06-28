@@ -1,0 +1,128 @@
+
+/********************
+     Base Styles
+**********************/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header {
+	background-color: #09cfd4;
+	height: 70px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.site-name {
+	border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.intro {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.site-name,
+.intro,
+span {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*****************
+	FORM STYLES
+*****************/
+
+legend {
+	font-size: 1.10em;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+legend,
+label p,
+.primary,
+.secondary  {
+	font-family: 'Raleway';
+}
+
+[required] {
+	text-align: right;
+	padding-right: 10px;
+}
+
+input[id="name"],
+input[id="mail"],
+input[id="tel"],
+input[id="address"],
+input[id="city"],
+select,
+textarea {
+	border-radius: 5px;
+	box-shadow: 0 0 4px 0 inset;
+	height: 40px;
+	width: 100%;
+}
+
+input[id="name"],
+input[id="mail"],
+input[id="tel"],
+input[id="address"],
+input[id="city"],
+select { 
+	margin-bottom: 10px;
+}
+
+input[id="zipcode"] {
+	border-radius: 5px;
+	box-shadow: 0 0 4px 0 inset;
+	height: 40px;
+}
+
+
+input[id="checkbox"],
+input[id="radio"] {
+	margin: 0 10px 10px 0;
+}
+
+textarea {
+	height: 90px;
+}
+
+.primary,
+.secondary {
+	border-top: 2px solid #09cfd4;
+	margin: 20px;
+	padding: 20px;
+}
+
+.primary,
+.secondary,
+span {
+	margin-left: 20px;
+}
+
+.secondary p,
+textarea {
+	margin: 10px 0;
+}
+
+.secondary label] {
+
+}
+
+
+button {
+	background: #beaded;
+	border-radius: 5px;
+	color: #fff;
+	height: 40px;
+	width: 60%;
+}
+
+
