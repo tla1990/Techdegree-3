@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="flex.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&Roboto&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
@@ -22,16 +22,15 @@
     </div>
 		
     <div class="primary">
-      
-
-  		  <form action="index.html" method="post">
+      <form action="index.html" method="post">
+          <fieldset>
           <legend>Your Information</legend>
           
           <label for="name">Name</label>
           <input type="text" id="name" name="user-name" placeholder="Required" required>
               
-          <label for="mail">Email</label>
-          <input type="text" id="mail" name="user-email"placeholder="Required" required>
+        <label for="mail">Email</label>
+        <input type="text"id="mail"name="user-email"placeholder="Required"required>
               
           <label for="tel">Phone</label>
           <input type="tel" id="tel" name="user-telephone">
@@ -43,7 +42,7 @@
           <input type="text" id="city" name="user-city">
             
           <label for="state">State</label>
-           <select id="state" name="user-state" placeholder="Choose Your State"> 
+           <select id="state" name="user-state">
             <option value="" selected="selected">Select a State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -100,13 +99,14 @@
 
           <label for="zipcode">Zip Code</label>
           <input type="text" id="zipcode" name="user-zipcode">
+        </fieldset>
         </form>
       </div>
 
       <div class="secondary">
-        <legend>Writing Preferences</legend>
 
       <fieldset>
+        <legend>Writing Preferences</legend>
         <p>Most Written Style/Type Used</p>
 
      		 <input type="checkbox" id="freeverse" name="user-freeverse" checked>
@@ -117,24 +117,23 @@
 
       <fieldset> 
         <p>Method of Writing</p>
-       <input type="radio" id="radio" name="user-format" checked>
+       <input type="radio" id="paper" name="user-format" checked>
        <label>Paper</label><br>
-   		 <input type="radio" id="radio" name="user-format">
+   		 <input type="radio" id="electronic" name="user-format">
        <label>Electronic</label><br>
-       <input type="radio" id="radio" name="user-format">
-       <label>Both</label><br>
+       <input type="radio" id="both" name="user-format">
+       <label>Both</label>
       </fieldset>
 
-        <label for="topics">How has poetry impacted your life?</label><br>      
+        <label>How has poetry impacted your life?</label><br> 
         <textarea></textarea><br>
           
           
-        <button type="sumbit">Sign Up</button>
+        <button type="submit">Sign Up</button>
     </div>  
 
     <footer>
         <p>Copyright Poets United</p>
     </footer>
 	</body>
-
 </html>

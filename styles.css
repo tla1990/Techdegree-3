@@ -174,18 +174,19 @@ input[id="mail"],
 input[id="tel"],
 input[id="address"],
 input[id="city"],
+input[id="zipcode"],
 select {
 	float: right;
+	margin-bottom: 15px;
 	width: 70%;
 }
 
 input[id="zipcode"] {
-	float: left;
-	margin-right: 50px;
-	width: 30%;
-	}
+	margin-bottom: 40px;
+}
 
-.primary legend {
+.primary legend,
+.secondary legend  {
 	margin-bottom: 20px;
 }
 
@@ -193,7 +194,6 @@ input[id="zipcode"] {
 	float: left;
 	margin: 10px;
 	vertical-align: middle;
-
 }
 
 .primary label,
