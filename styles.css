@@ -108,9 +108,13 @@ input[type="radio"] {
 	margin: 0 10px 15px 0;
 }
 
+.primary, 
+.secondary{
+	border-top: 2px solid #09cfd4;
+}
+
 .primary,
 .secondary {
-	border-top: 2px solid #09cfd4;
 	margin: 20px;
 	padding: 20px;
 }
