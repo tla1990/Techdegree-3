@@ -110,20 +110,22 @@
             <p>Most Written Style/Type Used</p>
 
          		 <input type="checkbox" id="freeverse" name="user-freeverse" checked>
-             <label>Free Verse</label><br>
-         		 <input type="checkbox" id="western" name="user-western"><label>Structured: Western (Sonnet)</label><br>
-         		 <input type="checkbox" id="eastern" name="user-eastern"><label>Structured: Eastern (Haiku)</label>
+             <label for="freeverse">Free Verse</label><br>
+         		 <input type="checkbox" id="western" name="user-western">
+             <label for="western">Structured: Western (Sonnet)</label><br>
+         		 <input type="checkbox" id="eastern" name="user-eastern">
+             <label for="eastern">Structured: Eastern (Haiku)</label>
 
           <p>Method of Writing</p>
            <input type="radio" id="paper" name="user-format" checked>
-           <label>Paper</label><br>
+           <label for="paper">Paper</label><br>
        		 <input type="radio" id="electronic" name="user-format">
-           <label>Electronic</label><br>
+           <label for="electronic">Electronic</label><br>
            <input type="radio" id="both" name="user-format">
-           <label>Both</label><br>
+           <label for="both">Both</label><br>
 
-            <label>How has poetry impacted your life?</label><br> 
-            <textarea></textarea><br>
+            <label for="impact">How has poetry impacted your life?</label><br> 
+            <textarea id="impact" name="user-impact"></textarea><br>
               
             <button type="submit">Sign Up</button>
           </fieldset>
